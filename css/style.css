@@ -1,4 +1,8 @@
-/* Reset CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html,
 body,
 div,
@@ -86,19 +90,62 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* FIM DO CSS RESET */
+
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+footer{
     background-color: #2f734c;
-    color: #FFF;
-    width: 100%;
-    height: 50px;
     text-align: center;
-    justify-content: center;
+    padding: 5px;
 }
 
 .navbar {
@@ -117,14 +164,8 @@ footer {
     text-decoration: none;
 }
 
-a#acessoFacil {
-    color: yellow;
-    font-style: italic;
-}
-
-h2#login {
+h2.login {
     float: right;
-    padding: 14px 16px;
 }
 
 .dropdown {
@@ -175,13 +216,14 @@ h2#login {
     display: block;
 }
 
-a {
-    color: #000;
+a#acessoFacil{
+    color: yellow;
+    font-style: italic;
     position: relative;
     text-decoration: none;
 }
 
-a::before {
+a:acessoFacil::before {
     background: hsl(45 100% 70%);
     content: "";
     inset: 0;
@@ -195,4 +237,9 @@ a::before {
 a:hover::before {
     transform: scaleX(1);
     transform-origin: left;
+}
+
+iframe.videoCentral{
+    border: rgb(236, 236, 236) 5px solid;
+    border-radius: 10px;
 }

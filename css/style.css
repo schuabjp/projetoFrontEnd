@@ -134,15 +134,16 @@ table {
     border-spacing: 0;
 }
 
-/* FIM DO CSS RESET */
+/* ------ FIM DO CSS RESET ------ */
 
 
-body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
-footer{
+footer {
     background-color: #2f734c;
     text-align: center;
     padding: 5px;
@@ -152,7 +153,7 @@ footer{
     background-color: #2f734c;
     overflow: hidden;
     color: white;
-    padding: 12px;
+    padding: 13px;
 }
 
 .navbar a {
@@ -216,9 +217,12 @@ h2.login {
     display: block;
 }
 
-a#acessoFacil{
+i#acessoFacilIcone{
     color: yellow;
-    font-style: italic;
+}
+
+a#acessoFacil {
+    color: white;
     position: relative;
     text-decoration: none;
 }
@@ -239,7 +243,18 @@ a:hover::before {
     transform-origin: left;
 }
 
-iframe.videoCentral{
+iframe.videoCentral {
     border: rgb(236, 236, 236) 5px solid;
     border-radius: 10px;
+}
+
+.logo-e-titulo {
+    display: flex;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    justify-content: space-evenly;
+}
+
+.logo-e-titulo img {
+    margin-right: 10px;
 }

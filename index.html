@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/cd8e0a52ff.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </head>
 
 
@@ -15,6 +16,7 @@
         <a href="#about" id="acessoFacil"><i id="acessoFacilIcone" class="fa-solid fa-users"></i>Cidadão</a>
         <a href="#about" id="acessoFacil"><i id="acessoFacilIcone" class="fa-solid fa-building"></i>Empresa</a>
         <a href="#home" id="acessoFacil"><i id="acessoFacilIcone" class="fa-solid fa-landmark"></i>Servidor</a>
+
         <!-- 
             MENU DROPDOWN
 
@@ -27,6 +29,7 @@
                 <a href="#">Menu B</a>
                 <a href="#">Menu C</a>
             </div> -->
+
         <h2 class="login"><a href="#"><i class="fa-solid fa-lock"></i>Login/Cadastro</a></h2>
     </div>
     <div>
@@ -39,14 +42,22 @@
             <h2 class="navbar2">Menu 5</h2>
             <h2 class="navbar2">Menu 6</h2>
         </div>
-        <p><iframe class="videoCentral" width="420" height="345"
-                src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"></iframe></p>
+        <div>
+            <iframe id="videoSelecionado" class="videoCentral" width="420" height="345"
+                src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"></iframe>
+            <button class="execucao" id="video1"
+                onclick="novoVideo('1')">Opção1</button>
+            <button class="vidSelec" id="video2"
+                onclick="novoVideo('2')">Opção2</button>
+            <button class="vidSelec" id="video3"
+                onclick="novoVideo('3')">Opção3</button>
 
-        <footer>
-            © Copyright Instar - 2006-2023. Todos os direitos reservados - <a href="https://www.instar.com.br/">Instar
-                Tecnologia</a>
-        </footer>
-    </div>
+            <footer>
+                © Copyright Instar - 2006-2023. Todos os direitos reservados - <a
+                    href="https://www.instar.com.br/">Instar
+                    Tecnologia</a>
+            </footer>
+        </div>
 
 </body>
 

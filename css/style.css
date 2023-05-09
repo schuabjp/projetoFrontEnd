@@ -139,7 +139,7 @@ table {
 
 
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -167,6 +167,8 @@ footer {
 
 h2.login {
     float: right;
+    background-color: #24663f;
+    border-radius: 100px;
 }
 
 .dropdown {
@@ -217,8 +219,9 @@ h2.login {
     display: block;
 }
 
-i#acessoFacilIcone{
+i#acessoFacilIcone {
     color: yellow;
+    margin-right: 5px;
 }
 
 a#acessoFacil {
@@ -257,4 +260,8 @@ iframe.videoCentral {
 
 .logo-e-titulo img {
     margin-right: 10px;
+}
+
+.execucao {
+    border: 1px solid green;
 }

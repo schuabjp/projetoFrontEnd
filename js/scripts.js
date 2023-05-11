@@ -29,4 +29,3 @@ function novoVideo(video) {
             break;
     }
 }
-

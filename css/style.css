@@ -146,7 +146,116 @@ body {
 footer {
     background-color: #2f734c;
     text-align: center;
-    padding: 5px;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos para o elemento 'dropdown' */
+#dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilos para o elemento de submenu 'dropdown-content' */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Estilos para exibir o submenu quando o mouse passar sobre o elemento 'dropdown' */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos para o link 'Menu 6' */
+.dropdown a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Estilos para o link de submenu */
+.dropdown-content a {
+    display: block;
+    color: #2f734c;
+    background-color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Estilos para o link de submenu quando o mouse passar sobre ele */
+.dropdown-content a:hover {
+    background-color: #2f734c;
+    color: #ffffff;
+}
+
+
+.footer-info {
+    flex-basis: 25%;
+    max-width: 25%;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.footer-info h3 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-info form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer-info input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    outline: none;
+}
+
+.footer-info button[type="submit"] {
+    padding: 2.5px 20px;
+    border-radius: 0 20px 20px 0;
+    border: none;
+    background-color: white;
+    color: #2f734c;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer-info button[type="submit"]:hover {
+    background-color: #003113;
+    color: white;
+}
+
+.footer-info a {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-info a:hover {
+    color: #bbbbbb;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
 }
 
 .navbar {
@@ -164,6 +273,44 @@ footer {
     padding: 14px 16px;
     text-decoration: none;
 }
+
+.navbar2 {
+    color: black;
+    float: left;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 10px;
+}
+
+.navbar2:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #333;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar2:hover {
+    color: #333;
+}
+
+.navbar2:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+i.acessoFacilIcone {
+    margin-left: 200px;
+    background: red;
+}
+
 
 h2.login {
     float: right;
@@ -187,12 +334,6 @@ h2.login {
     margin: 0;
 }
 
-/* .navbar a:hover,
-.dropdown:hover .dropbtn {
-    background-color: #ddd;
-    color: black;
-} */
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -211,44 +352,40 @@ h2.login {
     text-align: left;
 }
 
-/* .dropdown-content a:hover {
-    background-color: #ddd;
-} */
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-i#acessoFacilIcone {
-    color: yellow;
-    margin-right: 5px;
-}
-
-a#acessoFacil {
-    color: white;
-    position: relative;
+.acessoFacil {
+    color: black;
     text-decoration: none;
+    margin: 0 10px;
+    position: relative;
+    transition: all 0.3s ease;
 }
 
-a:acessoFacil::before {
-    background: hsl(45 100% 70%);
+.acessoFacil:before {
     content: "";
-    inset: 0;
     position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: yellow;
+    visibility: hidden;
     transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.5s ease-in-out;
-    z-index: -1;
+    transition: all 0.3s ease-in-out 0s;
 }
 
-a:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
+.acessoFacil:hover {
+    color: yellow;
 }
+
+.acessoFacil:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
 
 iframe.videoCentral {
     border: rgb(236, 236, 236) 5px solid;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .logo-e-titulo {
@@ -260,8 +397,68 @@ iframe.videoCentral {
 
 .logo-e-titulo img {
     margin-right: 10px;
+    transition: all 0.3s ease;
 }
 
+.logo-e-titulo img:hover {
+    transform: scale(110%);
+}
+
+
 .execucao {
-    border: 1px solid green;
+    border: 4px solid green;
+}
+
+
+div.galeriaVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloGalVideo {
+    margin-right: 400px;
+}
+
+.galeriaVideo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px solid gray;
+}
+
+.videoEbotao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.botaoDireita {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.botaoDireita button {
+    border-radius: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+    background-color: #f2f2f2;
+    color: #555;
+    border: 2px solid darkgreen;
+    padding: 15px 50px;
+}
+
+.botaoDireita button.execucao {
+    background-color: green;
+    color: white;
+}
+
+.botaoDireita button:hover {
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
 }

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 
 <head>
+    <meta charset="UTF-8">
     <title>Landing Page</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,53 +12,82 @@
 
 
 <body>
-    <div class="navbar">
-        <!-- <h2 href="#home">Prefeitura de Macaubal</h2> -->
-        <a href="#about" id="acessoFacil"><i id="acessoFacilIcone" class="fa-solid fa-users"></i>Cidadão</a>
-        <a href="#about" id="acessoFacil"><i id="acessoFacilIcone" class="fa-solid fa-building"></i>Empresa</a>
-        <a href="#home" id="acessoFacil"><i id="acessoFacilIcone" class="fa-solid fa-landmark"></i>Servidor</a>
+<div class="navbar">
+    <a href="#" class="acessoFacil">
+        <i class="fa-solid fa-users" id="acessoFacilIcone"></i>Cidadão
+    </a>
+    <a href="#" class="acessoFacil">
+        <i class="fa-solid fa-building" id="acessoFacilIcone"></i>Empresa
+    </a>
+    <a href="#" class="acessoFacil">
+        <i class="fa-solid fa-landmark" id="acessoFacilIcone"></i>Servidor
+    </a>
+    <h2 class="login">
+        <a href="#">
+            <i class="fa-solid fa-lock"></i>Login/Cadastro
+        </a>
+    </h2>
+</div>
 
-        <!-- 
-            MENU DROPDOWN
 
-            <div class="dropdown">
-            <button onmouseover="myFunction()" class="dropbtn">Services
-                <i class="fa-solid fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content bar-block card-4 animate-zoom">
-                <a href="#">Menu A</a>
-                <a href="#">Menu B</a>
-                <a href="#">Menu C</a>
-            </div> -->
-
-        <h2 class="login"><a href="#"><i class="fa-solid fa-lock"></i>Login/Cadastro</a></h2>
+<div>
+    <div class="logo-e-titulo">
+        <a href="https://macaubal.sp.gov.br/"><img src="css/images/logo.png" alt="Logo Prefeitura"></a>
+        <a href="#"><h2 class="navbar2">Menu 1</h2></a>
+        <a href="#"><h2 class="navbar2">Menu 2</h2></a>
+        <a href="#"><h2 class="navbar2">Menu 3</h2></a>
+        <a href="#"><h2 class="navbar2">Menu 4</h2></a>
+        <a href="#"><h2 class="navbar2">Menu 5</h2></a>
+        <div class="dropdown">
+            <a href="#"><h2 class="navbar2">Menu 6 &#9662;</h2></a>
+            <div class="dropdown-content">
+                <a href="#">Submenu 1</a>
+                <a href="#">Submenu 2</a>
+                <a href="#">Submenu 3</a>
+            </div>
+        </div>
     </div>
-    <div>
-        <div class="logo-e-titulo">
-            <img src="css/images/logo.png" alt="Logo Prefeitura">
-            <h2 class="navbar2">Menu 1</h2>
-            <h2 class="navbar2">Menu 2</h2>
-            <h2 class="navbar2">Menu 3</h2>
-            <h2 class="navbar2">Menu 4</h2>
-            <h2 class="navbar2">Menu 5</h2>
-            <h2 class="navbar2">Menu 6</h2>
-        </div>
-        <div>
-            <iframe id="videoSelecionado" class="videoCentral" width="420" height="345"
-                src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"></iframe>
-            <button class="execucao" id="video1"
-                onclick="novoVideo('1')">Opção1</button>
-            <button class="vidSelec" id="video2"
-                onclick="novoVideo('2')">Opção2</button>
-            <button class="vidSelec" id="video3"
-                onclick="novoVideo('3')">Opção3</button>
 
-            <footer>
-                © Copyright Instar - 2006-2023. Todos os direitos reservados - <a
-                    href="https://www.instar.com.br/">Instar
-                    Tecnologia</a>
-            </footer>
+    <div class="galeriaVideo">
+        <h1 class="tituloGalVideo">Galeria de Vídeos</h1>
+        <div class="videoEbotao">
+            <iframe id="videoSelecionado" class="videoCentral" width="420" height="345"
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"></iframe>
+            <div class="botaoDireita">
+                <button class="execucao" id="video1" onclick="novoVideo('1')">Opção1</button>
+                <button class="vidSelec" id="video2" onclick="novoVideo('2')">Opção2</button>
+                <button class="vidSelec" id="video3" onclick="novoVideo('3')">Opção3</button>
+            </div>
         </div>
+    </div>
+    <footer>
+        <div class="footer-info">
+            <h3>Endereço</h3>
+            <p>Praça Dep. Arlindo A. dos Santos, 235</p>
+            <p>CEP: 15270-000</p>
+        </div>
+        <div class="footer-info">
+            <h3>Fale Conosco</h3>
+            <p>(17) 3874-6080</p>
+            <p>prefeitura@macaubal.sp.gov.br</p>
+        </div>
+        <div class="footer-info">
+            <h3>Newsletter</h3>
+            <form action="#">
+                <input type="email" placeholder="Seu melhor e-mail" required>
+                <button type="submit">Inscreva-se</button>
+            </form>
+        </div>
+        <div class="footer-info">
+            <h3>Redes Sociais</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; Instar - 2006-2023. Todos os direitos reservados <a href="https://www.instar.com.br/"><br><p>Instar Tecnologia</a></p>
+        </div>
+    </footer>
 
 </body>
 
